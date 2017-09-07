@@ -1,0 +1,7 @@
+<h1><%= @contact.full_name %></h1>
+<h2>Email: <%= @contact.email %></h2>
+<h2>Phone Number: <%= @contact.phone_number %></h2>
+<h5>Updated On: <%= @contact.friendly_updated_at %></h5>
+
+<a href="/contacts/<%= @contact.id %>/edit">Edit</a>
+<a href="/contacts/<%= @contact.id %>"></a>
