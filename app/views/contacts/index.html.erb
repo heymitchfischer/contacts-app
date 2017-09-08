@@ -1,3 +1,5 @@
+<h2><a href="/contacts/new">Add new contact</a></h2>
+
 <% @contacts.each do |contact| %>
   <h1><a href="/contacts/<%= contact.id %>"><%= contact.full_name %></a></h1>
   <h2>Email: <%= contact.email %></h2>
