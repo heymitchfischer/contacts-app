@@ -3,6 +3,10 @@
 <h2>Phone Number: <%= @contact.phone_number %></h2>
 <h2>Bio: <%= @contact.bio %></h2>
 <h5>Updated On: <%= @contact.friendly_updated_at %></h5>
+<h5>Groups: </h5>
+<% @contact.groups.each do |group| %>
+  <h5><%= group.name %></h5>
+<% end %>
 
 <a href="/contacts/<%= @contact.id %>/edit">Edit</a>
 <a href="/contacts/<%= @contact.id %>" data-method="delete">Delete</a>

@@ -9,3 +9,12 @@
 #                       )
 #   contact.save
 # end
+
+# Group.create!(name: "Friends")
+# Group.create!(name: "Family")
+# Group.create!(name: "Co-Workers")
+
+# Contact.all.each do |contact|
+#   ContactGroup.create!(contact_id: contact.id, group_id: [1, 2, 3].sample)
+# end
+
